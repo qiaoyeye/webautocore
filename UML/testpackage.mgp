@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PackageAnalysis>
+    <Package name="com.core.base" x="365" y="52">
+        <DependencyLink destination="com.core.dao"/>
+        <DependencyLink destination="com.core.util"/>
+        <DependencyLink destination="com.core.listener"/>
+    </Package>
+    <Package name="com.core.dao" x="656" y="142">
+        <DependencyLink destination="com.core.base"/>
+    </Package>
+    <Package name="com.core.listener" x="118" y="152">
+        <DependencyLink destination="com.core.util"/>
+    </Package>
+    <Package name="com.core.po" x="667" y="317">
+        <DependencyLink destination="com.core.dao"/>
+        <DependencyLink destination="com.core.util"/>
+        <DependencyLink destination="com.core.base"/>
+    </Package>
+    <Package name="com.core.testcase" x="352" y="460">
+        <DependencyLink destination="com.core.dao"/>
+        <DependencyLink destination="com.core.util"/>
+        <DependencyLink destination="com.core.base"/>
+        <DependencyLink destination="com.core.po"/>
+    </Package>
+    <Package name="com.core.util" x="120" y="328">
+        <DependencyLink destination="com.core.dao"/>
+        <DependencyLink destination="com.core.base"/>
+    </Package>
+</PackageAnalysis>
