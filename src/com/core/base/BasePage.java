@@ -8,6 +8,21 @@ package com.core.base;
 *  
 */
 public interface BasePage {
+	/** 
+	* @Title: validation 
+	* @Description: 每个页面的操作元素方法
+	* @param baseLocator
+	* @return void
+	* @throws 
+	*/
 	public abstract void validation(BaseLocator baseLocator);
-	public abstract void action();
+	/** 
+	* @Title: action 
+	* @Description: 入口方法，设置测试数据，覆盖方法中需要调用validation方法，
+	* @param sheet
+	* @param CaseNum
+	* @return void
+	* @throws 
+	*/
+	public abstract void action(int sheet, int CaseNum);
 }

@@ -8536,3 +8536,82 @@
 2015-12-23 15:37:49.741 DEBUG com.core.util.Log 28 debug - com.core.base.BaseListener: passed:testlogin
 2015-12-23 15:37:49.750 DEBUG com.core.util.Log 28 debug - com.core.base.BaseListener: passed:testlogin
 2015-12-23 15:37:49.750 DEBUG com.core.util.Log 28 debug - com.core.base.BaseListener: passed:testlogin
+2016-02-24 17:06:33.763 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site
+2016-02-24 17:06:33.805 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-24 17:06:33.805 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: Myconfig.properties,key=init
+2016-02-24 17:06:33.805 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-24 17:06:33.806 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: Myconfig.properties,key=chromePath
+2016-02-24 17:06:36.241 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site_username
+2016-02-24 17:06:36.241 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site_password
+2016-02-24 17:06:36.247 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-24 17:06:37.811 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-24 17:07:59.433 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site
+2016-02-24 17:07:59.475 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-24 17:07:59.475 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: Myconfig.properties,key=init
+2016-02-24 17:07:59.476 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-24 17:07:59.476 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: Myconfig.properties,key=chromePath
+2016-02-24 17:08:01.883 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site_username
+2016-02-24 17:08:01.884 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site_password
+2016-02-24 17:08:01.930 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator)
+2016-02-24 17:08:01.931 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-24 17:08:01.934 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-24 17:08:02.001 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  admin
+2016-02-24 17:08:02.002 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator)
+2016-02-24 17:08:02.002 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-24 17:08:02.002 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
+2016-02-24 17:08:02.052 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  123456
+2016-02-24 17:08:02.052 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-24 17:08:02.052 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-24 17:08:02.141 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-24 17:08:04.349 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-24 17:08:55.247 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site
+2016-02-24 17:08:55.289 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-24 17:08:55.289 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: Myconfig.properties,key=init
+2016-02-24 17:08:55.289 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-24 17:08:55.289 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: Myconfig.properties,key=chromePath
+2016-02-24 17:08:57.632 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site_username
+2016-02-24 17:08:57.632 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site_password
+2016-02-24 17:08:57.674 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator)
+2016-02-24 17:08:57.674 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-24 17:08:57.677 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-24 17:08:57.750 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  admin
+2016-02-24 17:08:57.751 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator)
+2016-02-24 17:08:57.751 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-24 17:08:57.751 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
+2016-02-24 17:08:57.803 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  123456
+2016-02-24 17:08:57.803 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-24 17:08:57.803 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-24 17:11:18.192 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site
+2016-02-24 17:11:18.235 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-24 17:11:18.236 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: Myconfig.properties,key=init
+2016-02-24 17:11:18.236 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-24 17:11:18.236 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: Myconfig.properties,key=chromePath
+2016-02-24 17:11:20.620 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site_username
+2016-02-24 17:11:20.621 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site_password
+2016-02-24 17:11:20.659 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator)
+2016-02-24 17:11:20.660 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-24 17:11:20.663 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-24 17:11:20.734 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  admin
+2016-02-24 17:11:20.734 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator)
+2016-02-24 17:11:20.735 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-24 17:11:20.735 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
+2016-02-24 17:11:20.787 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  123456
+2016-02-24 17:11:20.787 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-24 17:11:20.787 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-24 17:18:22.613 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site
+2016-02-24 17:18:22.658 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-24 17:18:22.658 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: Myconfig.properties,key=init
+2016-02-24 17:18:22.659 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-24 17:18:22.659 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: Myconfig.properties,key=chromePath
+2016-02-24 17:18:25.071 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site_username
+2016-02-24 17:18:25.071 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: logininfo.properties,key=product_site_password
+2016-02-24 17:18:25.117 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator)
+2016-02-24 17:18:25.117 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-24 17:18:25.138 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-24 17:18:40.273 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  admin
+2016-02-24 17:18:42.170 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator)
+2016-02-24 17:18:42.171 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-24 17:18:42.171 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
+2016-02-24 17:18:43.594 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  123456
+2016-02-24 17:18:45.593 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-24 17:18:45.593 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user

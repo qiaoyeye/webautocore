@@ -4,7 +4,6 @@ import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,7 +11,12 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 
 import org.apache.poi.POIXMLDocument;
@@ -20,21 +24,24 @@ import org.apache.poi.POIXMLTextExtractor;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.hssf.usermodel.HSSFRichTextString;
-import org.apache.poi.hssf.usermodel.HSSFRow;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.hwpf.extractor.WordExtractor;
 import org.apache.poi.openxml4j.opc.OPCPackage;
-import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFRichTextString;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
+import org.dom4j.Attribute;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
 import org.openqa.selenium.io.FileHandler;
+
+import com.core.dao.Locator;
 
 /** 
 * @ClassName: OptionFile 
@@ -45,13 +52,61 @@ import org.openqa.selenium.io.FileHandler;
 */
 public class OptionFile {
 	public static void main(String args[]) {
-		System.out.println(getExcel("D:/03excel.xls",1,2,2));
+		/*System.out.println(getExcel("D:/03excel.xls",1,2,2));
 		System.out.println(getExcel("D:/07excel.xlsx",1,2,2));
 		//System.out.println(getLocatorArray("D:/03excel.xls",1).length);
 		
-		System.out.println(readWord("D:/work/项目/交易C/创意阳光/创意阳关ui和模版/创意阳光/彩虹计划协议_V1.0.doc"));
+		System.out.println(readWord("D:/work/项目/交易C/创意阳光/创意阳关ui和模版/创意阳光/彩虹计划协议_V1.0.doc"));*/
+		readxml("D:/git/webautocore/excel/loginpage.xml");
 	}
 	static Log log = new Log(OptionFile.class);
+	
+	 /** 
+	* @Title: readxml 
+	* @Description: 页面元素存放于xml，将XML中的Bytype和value封装于Locator，和该行的text存于map，并返回Map
+	* @param xmlpath
+	* @return void
+	* @throws 
+	*/
+	public static Map readxml(String xmlpath) {
+		 	
+	        // TODO Auto-generated method stub
+	        SAXReader read = new SAXReader();
+	        File file = new File(xmlpath);
+	        Map<String, Locator> map = new HashMap<String, Locator>();
+	        try {
+	            Document document = read.read(file);
+	            
+	            Element root = document.getRootElement();
+	            System.out.println("------>一级元素name:"+root.getName());
+	            
+	            List<Element> liste = root.elements();
+	            System.out.println("------>二级元素大小:"+liste.size());
+	            
+	            for(Iterator<Element> iterator=root.elementIterator();iterator.hasNext();) {
+	                Element e1 = iterator.next();
+	                System.out.println("------>二级元素name:"+e1.getName());
+	                for(Iterator<Element> iterator2=e1.elementIterator();iterator2.hasNext();) {
+	                    Element e2 = iterator2.next();
+	                    System.out.println("------>三级元素name:"+e2.getName());
+	                    System.out.println("------>三级元素text:"+e2.getText());
+	                    System.out.println("--------------->map:"+e2.attributeValue(e2.attribute(0).getName()));
+	                    System.out.println("--------------->map:"+e2.attributeValue(e2.attribute(1).getName()));
+	                    String unqueindex = e2.getText();
+	                    String key = e2.attributeValue(e2.attribute(0).getName());
+	                    String value = e2.attributeValue(e2.attribute(1).getName());
+	                    //map.put(key, value);
+	                    Locator lc = new Locator(key,value);
+	                    map.put(unqueindex, lc);
+	                }
+	            }
+	        } catch (DocumentException e) {
+	            // TODO Auto-generated catch block
+	            e.printStackTrace();
+	        }
+	        return map;
+	    }
+	
 	/** 
 	* @Title: getPropertiesValue 
 	* @Description: 获取properties文件内容值，路径是死的
@@ -473,6 +528,14 @@ public class OptionFile {
 		return s;
 	}
 	
+	/** 
+	* @Title: readWord 
+	* @Description: 读取word文件内容
+	* @param path
+	* @return
+	* @return StringBuffer
+	* @throws 
+	*/
 	public static StringBuffer readWord(String path) {
 		log.debug("读取word文件："+path);
         String s = "";
@@ -494,6 +557,172 @@ public class OptionFile {
         }
 		StringBuffer bf = new StringBuffer(s);
 		return bf;
+	}
+	/** 
+	* @Title: getExcelRowCount 
+	* @Description: 获取excel的行数
+	* @param path
+	* @param index
+	* @return
+	* @return int
+	* @throws 
+	*/
+	public static int getExcelRowCount(String path, int index) {
+		int rowcount = 0;
+		File file = new File(path);
+		Workbook wb = null;
+		Sheet sheet = null;
+		//Row row = null;
+		//Cell cell = null;
+		FileInputStream in;
+		try {
+			in = new FileInputStream(file);
+			if(path.endsWith(".xls")) {
+				wb = new HSSFWorkbook(in);
+				sheet = wb.getSheetAt(index-1);
+			}else if (path.endsWith(".xlsx")) {
+				wb = new XSSFWorkbook(in);
+				sheet = wb.getSheetAt(index-1);
+			}
+			//HSSFWorkbook wb = new HSSFWorkbook(new POIFSFileSystem(in));
+			//Sheet sheet = wb.getSheetAt(index);
+			Row header = sheet.getRow(0);
+			rowcount = sheet.getLastRowNum()+1;
+			
+			in.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+				
+		return rowcount;
+	}
+	/** 
+	* @Title: getExcelPriority 
+	* @Description: 获取excel的优先级集合
+	* @param path
+	* @param index
+	* @param p
+	* @return
+	* @return List<Integer>
+	* @throws 
+	*/
+	public static List<Integer> getExcelPriority(String path, int index, String p) {
+		int rowcount = 0;
+		int rowstart = 4;
+		String value = "";
+		List<Integer> list = new ArrayList<Integer>();
+		
+		File file = new File(path);
+		Workbook wb = null;
+		Sheet sheet = null;
+		//Row row = null;
+		//Cell cell = null;
+		FileInputStream in;
+		try {
+			in = new FileInputStream(file);
+			if(path.endsWith(".xls")) {
+				wb = new HSSFWorkbook(in);
+				sheet = wb.getSheetAt(index-1);
+			}else if (path.endsWith(".xlsx")) {
+				wb = new XSSFWorkbook(in);
+				sheet = wb.getSheetAt(index-1);
+			}
+			//HSSFWorkbook wb = new HSSFWorkbook(new POIFSFileSystem(in));
+			//Sheet sheet = wb.getSheetAt(index);
+			Row header = sheet.getRow(0);
+			rowcount = sheet.getLastRowNum()+1;
+			if(p.equals("ALL") || p.equals("P1") || p.equals("P2") || p.equals("P3")){
+				for(int i=rowstart; i<=rowcount; i++) {
+					value = getExcel(path, index, i, 2);
+					//传入的优先级如果是P1,则执行P1；传入的优先级如果是P2，则执行P1+P2;传入的是P3，则执行P1+P2+P3；传入的是ALL，则执行所有用例
+					if(p.equals("ALL")) {
+						list.add(i);
+					}else if(p.equals("P1")) {
+						if(value.equals("P1")) {
+							list.add(i);
+						}
+					}else if(p.equals("P2")) {
+						if(value.equals("P1") || value.equals("P2")) {
+							list.add(i);
+						}
+					}else if(p.equals("P3")) {
+						if(value.equals("P1") || value.equals("P2") || value.equals("P3")) {
+							list.add(i);
+						}
+					}
+					/*
+					 * 只执行传入的优先级或者执行所有的用例
+					if(p.equals("ALL") || p.equals("P1") || p.equals("P2") || p.equals("P3")){
+						for(int i=rowstart; i<=rowcount; i++) {
+							value = getExcel(path, index, i, 2);
+							//传入的优先级如果是P1,则执行P1；传入的优先级如果是P2，则执行P1+P2;传入的是P3，则执行P1+P2+P3；传入的是ALL，则执行所有用例
+							if(p.equals("ALL")) {
+								list.add(i);
+							}else if(p.equals("P1")) {
+								if(value.equals("P1")) {
+									list.add(i);
+								}
+							}else if(p.equals("P2")) {
+								if(value.equals("P2")) {
+									list.add(i);
+								}
+							}else if(p.equals("P3")) {
+								if(value.equals("P3")) {
+									list.add(i);
+								}
+							}
+						}
+					}
+					*/
+				}
+			}else {
+				System.out.println("从excel读取数据时，传入的用例优先级错误"+p);
+			}
+			in.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+				
+		return list;
+	}
+	
+	public static List<String> getExcelDataByCaseNum(String path, int index, int caseNum) {
+		int rowcount = 0;
+		int rowstart = 4;
+		int elementcount = Integer.parseInt(getExcel(path, index, 1, 2));
+		String value = "";
+		List<String> list = new ArrayList<String>();
+		
+		File file = new File(path);
+		Workbook wb = null;
+		Sheet sheet = null;
+		//Row row = null;
+		//Cell cell = null;
+		FileInputStream in;
+		try {
+			in = new FileInputStream(file);
+			if(path.endsWith(".xls")) {
+				wb = new HSSFWorkbook(in);
+				sheet = wb.getSheetAt(index-1);
+			}else if (path.endsWith(".xlsx")) {
+				wb = new XSSFWorkbook(in);
+				sheet = wb.getSheetAt(index-1);
+			}
+			//HSSFWorkbook wb = new HSSFWorkbook(new POIFSFileSystem(in));
+			//Sheet sheet = wb.getSheetAt(index);
+			Row header = sheet.getRow(0);
+			rowcount = sheet.getLastRowNum()+1;
+
+
+			in.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+				
+		return list;
 	}
 
 }

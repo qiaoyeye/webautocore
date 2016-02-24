@@ -14,9 +14,12 @@ public class Locator {
         	this.value = value;
         }
      }
-  
+    
+    //By by内的值
     private String element;
+    //By by
     ByType bt;
+    //测试数据值
     private String value;
     
     public String getValue() {

@@ -8,18 +8,19 @@ import com.core.base.BaseLocator;
  * ÀàËµÃ÷ 
  */
 public class LoginLocator implements BaseLocator{
-	public Locator getLc_name() {
-		return lc_name;
+
+	private String username;
+	private String password;
+	public String getUsername() {
+		return username;
 	}
-	public void setLc_name(Locator lc_name) {
-		this.lc_name = lc_name;
+	public void setUsername(String username) {
+		this.username = username;
 	}
-	public Locator getLc_pwd() {
-		return lc_pwd;
+	public String getPassword() {
+		return password;
 	}
-	public void setLc_pwd(Locator lc_pwd) {
-		this.lc_pwd = lc_pwd;
+	public void setPassword(String password) {
+		this.password = password;
 	}
-	private Locator lc_name;
-	private Locator lc_pwd;
 }

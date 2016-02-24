@@ -2,6 +2,7 @@ package com.core.util;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -202,6 +203,12 @@ public class Common{
         }
         return list;
     }
+	
+	public Locator getLocator1(String unqueindex) {
+		Map map = OptionFile.readxml("D:/git/webautocore/excel/loginpage.xml");
+		return (Locator) map.get(unqueindex);	
+	}
+	
     
     /** 
     * @Title: getLocator 

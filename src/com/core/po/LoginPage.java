@@ -22,8 +22,8 @@ public class LoginPage extends MidConvert implements BasePage{
 	String name = OptionFile.getPropertiesValue("logininfo.properties", "product_site_username");
 	String pwd = OptionFile.getPropertiesValue("logininfo.properties", "product_site_password");
 	
-	Locator lc_name = cm.getLocator("id", "user", name);
-	Locator lc_pwd = cm.getLocator("id", "pwd", pwd);
+	Locator lc_name = cm.getLocator1("username");
+	Locator lc_pwd = cm.getLocator1("password");
 	
 	public LoginPage(){
 	}
@@ -37,22 +37,26 @@ public class LoginPage extends MidConvert implements BasePage{
 		// TODO Auto-generated method stub
 		if(baseLocator instanceof LoginLocator) {
 			LoginLocator lc = (LoginLocator)baseLocator;
-			cm.sendkeys(lc.getLc_name());
-			cm.sendkeys(lc.getLc_pwd());
-			cm.findElement(lc.getLc_name()).submit();
+			cm.findElement(lc_name).sendKeys(lc.getUsername());			
+			cm.findElement(lc_pwd).sendKeys(lc.getPassword());
+			cm.findElement(lc_name).submit();
 		}else {
 			log.warn("传入的BaseLocator不是LoginLocator");
 		}
 	}
 
 	@Override
-	public void action() {
+	public void action(int sheet, int caseNum) {
 		// TODO Auto-generated method stub	
 		LoginLocator loginLocator = new LoginLocator();
-		loginLocator.setLc_name(lc_name);
-		loginLocator.setLc_pwd(lc_pwd);
+		loginLocator.setUsername("");
+		loginLocator.setPassword("");
 		validation(loginLocator);
 	}
 	
+	public void getTestData(int sheet, int caseNum) {
+		//OptionFile.getExcel(path, index, rowNum, colNum)
+	}
+		
 
 }

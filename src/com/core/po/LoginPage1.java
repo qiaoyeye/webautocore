@@ -12,6 +12,7 @@ import com.core.dao.LoginLocator;
  * @version 创建时间：2015年12月23日 下午2:53:37 
  * 类说明 
  */
+/*
 public class LoginPage1 extends MidConvert implements BasePage{
 
 	LoginLocator loginLocator1;
@@ -40,4 +41,4 @@ public class LoginPage1 extends MidConvert implements BasePage{
 		validation(loginLocator1);
 	}
 
-}
+}*/
