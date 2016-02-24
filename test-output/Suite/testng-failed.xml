@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="maxRetries" value="1"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="com.core.base.BaseListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.core.testcase.TestLogin">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="testlogin"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.core.testcase.TestLogin -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

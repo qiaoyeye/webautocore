@@ -1,0 +1,21 @@
+2015年12月4日 17:50:26
+1.解决了一些bug
+2.增加了Common类的一些方法
+
+
+2015年12月3日 12:04:18
+1.增加了父类MidConvert，包含成员变量Webdriver，Common，Locator，Log，初始化driver方法，和driver退出
+2.增加了excel测试数据模版
+
+2015年11月18日 17:55:50
+1.增加OptionFile的readProperties，可以通过不同的property文件路径去读取
+2.优化增加OptionFilesetExcel，支持excel03和07
+
+2015年11月13日
+优化excel读取，支持07版本，OptionFile.java
+
+2015年11月11日
+增加retry，且优化测试结果，使运行结果与实际 测试一致，TestRetryAnalyzer.java，BaseListener.java
+
+2015年11月10日
+增加retry，但是把重试的失败运行测试也加入了测试结果中，MyRetryAnalyzer.java，MyRetryListener.java

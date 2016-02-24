@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_67"/>
+	<classpathentry kind="lib" path="D:/360安全浏览器下载/selenium-server-standalone-2.47.1.jar"/>
+	<classpathentry kind="lib" path="D:/360安全浏览器下载/selenium/selenium-2.47.1/selenium-java-2.47.1.jar"/>
+	<classpathentry kind="lib" path="D:/360安全浏览器下载/selenium/selenium-2.47.1/selenium-java-2.47.1-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/BaiduYunDownload/testngreport/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="D:/BaiduYunDownload/testngreport/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="D:/BaiduYunDownload/testngreport/velocity-dep-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/BaiduYunDownload/excel/poi-3.9/poi-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/360安全浏览器下载/java/apache-log4j-2.3-bin/log4j-api-2.3.jar"/>
+	<classpathentry kind="lib" path="D:/360安全浏览器下载/java/apache-log4j-2.3-bin/log4j-core-2.3.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/seleniumjar/poi-3.9/poi-ooxml-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/seleniumjar/poi-3.9/poi-ooxml-schemas-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/seleniumjar/poi-3.9/ooxml-lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/seleniumjar/poi-3.9/ooxml-lib/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/seleniumjar/poi-3.9/poi-examples-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/seleniumjar/poi-3.9/poi-scratchpad-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/BaiduYunDownload/excel/poi-3.9/ooxml-lib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
