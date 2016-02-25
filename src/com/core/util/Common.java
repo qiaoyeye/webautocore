@@ -204,8 +204,17 @@ public class Common{
         return list;
     }
 	
-	public Locator getLocator1(String unqueindex) {
-		Map map = OptionFile.readxml("D:/git/webautocore/excel/loginpage.xml");
+	/** 
+	* @Title: getLocatorByXML 
+	* @Description: 通过XML获取Locator对象，并将Locator对象存入map
+	* @param path
+	* @param unqueindex
+	* @return
+	* @return Locator
+	* @throws 
+	*/
+	public Locator getLocatorByXML(String path, String unqueindex) {
+		Map map = OptionFile.readxml(path);
 		return (Locator) map.get(unqueindex);	
 	}
 	

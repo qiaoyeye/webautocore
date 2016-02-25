@@ -6,6 +6,7 @@ import com.core.dao.Locator;
 import com.core.util.Common;
 import com.core.util.InitBrowser;
 import com.core.util.Log;
+import com.core.util.OptionFile;
 
 /** 
 * @ClassName: MidConvert 
@@ -62,6 +63,11 @@ public class MidConvert extends BaseClass{
 		super.setDriver(dr);
 		cm.setDriver(dr);
 	}*/
+	
+	protected void testURL() {
+		final String URL = OptionFile.readProperties("./conf/logininfo.properties", "product_site");
+		dr.get(URL);
+	}
 	
 	/** 
 	* @Title: tearDown 

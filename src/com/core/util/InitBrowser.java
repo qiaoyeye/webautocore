@@ -17,13 +17,13 @@ public class InitBrowser {
 	public static WebDriver init(WebDriver dr) {
 		Log log = new Log(InitBrowser.class);
 		log.info("³õÊ¼»¯ä¯ÀÀÆ÷¿ªÊ¼");
-		String browser = OptionFile.getPropertiesValue("Myconfig.properties", "init");
+		String browser = OptionFile.readProperties("./conf/Myconfig.properties", "init");
 		
 		if(browser!=null) {
 			if(browser.equals("firefox")) {
 				log.info("Æô¶¯firefoxä¯ÀÀÆ÷");
 				String key = "webdriver.firefox.bin";
-				String value = OptionFile.getPropertiesValue("Myconfig.properties", "firePath");
+				String value = OptionFile.readProperties("./conf/Myconfig.properties", "firePath");
 				System.setProperty(key, value);
 				dr = new FirefoxDriver();
 				dr.manage().window().maximize();
@@ -31,7 +31,7 @@ public class InitBrowser {
 			}else if(browser.equals("IE")) {
 				log.info("Æô¶¯IEä¯ÀÀÆ÷");
 				String key = "webdriver.ie.driver";
-				String value = OptionFile.getPropertiesValue("Myconfig.properties", "IEPath");
+				String value = OptionFile.readProperties("./conf/Myconfig.properties", "IEPath");
 				System.setProperty(key, value);
 				dr = new InternetExplorerDriver();
 				dr.manage().window().maximize();
@@ -39,7 +39,7 @@ public class InitBrowser {
 			}else if (browser.equals("chrome")) {
 				log.info("chrome");
 				String key = "webdriver.chrome.driver";
-				String value = OptionFile.getPropertiesValue("Myconfig.properties", "chromePath");
+				String value = OptionFile.readProperties("./conf/Myconfig.properties", "chromePath");
 				System.setProperty(key, value);
 				dr = new ChromeDriver();
 				dr.manage().window().maximize();

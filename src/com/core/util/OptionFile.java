@@ -609,7 +609,7 @@ public class OptionFile {
 	*/
 	public static List<Integer> getExcelPriority(String path, int index, String p) {
 		int rowcount = 0;
-		int rowstart = 4;
+		int rowstart = 3;
 		String value = "";
 		List<Integer> list = new ArrayList<Integer>();
 		
@@ -688,41 +688,30 @@ public class OptionFile {
 		return list;
 	}
 	
-	public static List<String> getExcelDataByCaseNum(String path, int index, int caseNum) {
-		int rowcount = 0;
-		int rowstart = 4;
+	/** 
+	* @Title: getExcelDataByCaseNum 
+	* @Description: 通过用例行数，获得该行的测试数据，存为map并返回
+	* @param path
+	* @param index
+	* @param caseNum
+	* @return
+	* @return Map<String,String>
+	* @throws 
+	*/
+	public static Map<String, String> getExcelDataByCaseNum(String path, int index, int caseNum) {
+		int rowstart = 2;
+		int colstart = 4;
 		int elementcount = Integer.parseInt(getExcel(path, index, 1, 2));
-		String value = "";
-		List<String> list = new ArrayList<String>();
 		
-		File file = new File(path);
-		Workbook wb = null;
-		Sheet sheet = null;
-		//Row row = null;
-		//Cell cell = null;
-		FileInputStream in;
-		try {
-			in = new FileInputStream(file);
-			if(path.endsWith(".xls")) {
-				wb = new HSSFWorkbook(in);
-				sheet = wb.getSheetAt(index-1);
-			}else if (path.endsWith(".xlsx")) {
-				wb = new XSSFWorkbook(in);
-				sheet = wb.getSheetAt(index-1);
-			}
-			//HSSFWorkbook wb = new HSSFWorkbook(new POIFSFileSystem(in));
-			//Sheet sheet = wb.getSheetAt(index);
-			Row header = sheet.getRow(0);
-			rowcount = sheet.getLastRowNum()+1;
-
-
-			in.close();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		Map<String, String> map = new HashMap<String, String>();
+		
+		for(int i=0;i<elementcount;i++) {
+			String key = getExcel(path, index, rowstart, colstart+i);
+			String value = getExcel(path, index, caseNum, colstart+i);
+			map.put(key, value);
 		}
 				
-		return list;
+		return map;
 	}
 
 }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+    <loginpage>
+		<element ByType="id" value="user">username</element>
+		<element ByType="id" value="pwd">password</element>
+    </loginpage>
+</pages>

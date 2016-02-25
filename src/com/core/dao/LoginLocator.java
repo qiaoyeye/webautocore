@@ -23,4 +23,7 @@ public class LoginLocator implements BaseLocator{
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	public final String textusername = "username";
+	public final String textpassword = "password";
 }

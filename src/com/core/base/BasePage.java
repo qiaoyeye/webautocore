@@ -10,7 +10,7 @@ package com.core.base;
 public interface BasePage {
 	/** 
 	* @Title: validation 
-	* @Description: 每个页面的操作元素方法
+	* @Description: 每个页面的操作元素方法,将在该方法获取测试数据
 	* @param baseLocator
 	* @return void
 	* @throws 

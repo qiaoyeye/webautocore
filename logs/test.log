@@ -8615,3 +8615,126 @@
 2016-02-24 17:18:43.594 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  123456
 2016-02-24 17:18:45.593 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
 2016-02-24 17:18:45.593 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:20:16.980 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:20:16.985 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: Myconfig.properties,key=init
+2016-02-25 11:21:17.988 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:21:17.993 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: ./conf/Myconfig.properties,key=init
+2016-02-25 11:24:12.817 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:24:12.822 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: D:/git/webautocore/conf/Myconfig.properties,key=init
+2016-02-25 11:25:41.671 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:25:58.404 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: D:/git/webautocore/conf/Myconfig.properties,key=init
+2016-02-25 11:27:50.386 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:27:50.390 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: ./conf/Myconfig.properties,key=init
+2016-02-25 11:29:38.706 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:29:38.711 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: ./conf/Myconfig.properties,key=init
+2016-02-25 11:30:11.682 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:30:11.687 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: ./conf/Myconfig.properties,key=init
+2016-02-25 11:30:43.415 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:30:43.419 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: Myconfig.properties,key=init
+2016-02-25 11:30:43.420 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:30:43.420 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: ./conf/Myconfig.properties,key=chromePath
+2016-02-25 11:31:27.699 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:31:27.704 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:32:25.050 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:32:25.055 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:32:27.194 DEBUG com.core.util.Log 28 debug - com.core.util.OptionFile: Get the properties file: ./conf/logininfo.properties,key=product_site
+2016-02-25 11:33:06.781 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:33:06.787 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:33:46.769 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:33:46.774 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:35:00.096 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:35:00.102 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:36:26.166 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:36:26.169 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:37:03.059 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:37:03.064 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:37:44.986 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:37:44.987 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:38:39.542 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:38:39.543 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:39:23.581 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:39:23.583 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:41:09.214 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:41:09.216 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:41:11.986 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:41:11.990 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:41:12.054 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:41:12.054 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
+2016-02-25 11:41:12.112 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:41:12.113 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:42:10.135 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:42:10.136 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:42:12.899 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:42:12.902 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:42:12.968 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:42:12.968 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
+2016-02-25 11:42:13.035 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:42:13.035 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:44:42.650 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:44:42.652 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:44:46.947 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:44:46.950 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:44:47.016 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:44:47.016 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
+2016-02-25 11:44:47.071 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:44:47.072 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:46:33.466 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:46:33.467 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:46:37.568 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:46:37.572 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:46:37.635 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:46:37.635 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
+2016-02-25 11:46:37.684 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:46:37.684 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:47:54.338 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:47:54.340 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:47:58.351 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:47:58.355 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:47:58.416 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:47:58.417 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
+2016-02-25 11:47:58.469 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:47:58.469 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:48:38.125 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:48:38.127 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:48:42.137 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:48:42.140 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:48:42.203 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:48:42.204 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
+2016-02-25 11:48:42.254 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:48:42.255 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:53:45.578 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:53:45.582 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:53:49.303 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:53:49.306 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:53:59.356 ERROR com.core.util.Log 32 error - com.core.util.Common: 通过id找不到user
+2016-02-25 11:53:59.356 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-25 11:54:10.292 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:54:10.297 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:54:14.420 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:54:14.423 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:54:14.488 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:54:14.489 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
+2016-02-25 11:54:14.544 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:54:14.544 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:54:37.806 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 11:54:37.810 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 11:54:41.887 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:54:41.890 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 11:54:41.949 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:54:41.950 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
+2016-02-25 11:54:42.002 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 11:54:42.002 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 12:24:39.597 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-25 12:24:39.602 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-25 12:24:42.988 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 12:24:42.991 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 12:24:43.049 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 12:24:43.050 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
+2016-02-25 12:24:43.099 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 12:24:43.099 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 12:24:46.195 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 12:24:46.196 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-25 12:24:46.247 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 12:24:46.247 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
+2016-02-25 12:24:46.298 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-25 12:24:46.299 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user

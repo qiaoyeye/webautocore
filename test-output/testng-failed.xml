@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <parameter name="maxRetries" value="1"/>
-  <listeners>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="com.core.base.BaseListener"/>
-  </listeners>
-  <test name="Test(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="com.core.testcase.TestLogin">
         <methods>
           <include name="beforeClass"/>
-          <include name="testlogin"/>
+          <include name="testlogin" invocation-numbers="0"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.core.testcase.TestLogin -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

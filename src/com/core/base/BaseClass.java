@@ -9,12 +9,10 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
-import org.uncommons.reportng.HTMLReporter;
+
+
 
 /** 
 * @ClassName: BaseClass 
