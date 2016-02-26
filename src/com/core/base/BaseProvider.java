@@ -51,6 +51,8 @@ public class BaseProvider {
 			log.debug("获取到的用例优先级的个数为0，注意测试用例将不执行");
 		}
 		
+		log.debug("驱动得到的测试数据数量为："+listtemp.size());
+		
 		List<Object[]> list = new ArrayList<Object[]>();
 		for(Integer itg:listtemp) {
 			list.add(new Object[]{itg});

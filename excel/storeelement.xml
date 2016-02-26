@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 知乎页面测试 -->
+
+<pages>
+    <page name="com.core.po.LoginPage">
+		<element ByType="name" value="account">username</element>
+		<element ByType="name" value="password">password</element>
+		<element ByType="xpath" value="/html/body/div[1]/div/div[2]/div[2]/form/div[3]/button">but_submit</element>
+    </page>
+    <page name="home">
+		<element ByType="id" value=":0">Myaccount</element>
+    </page>
+</pages>

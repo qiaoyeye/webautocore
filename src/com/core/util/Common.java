@@ -218,6 +218,11 @@ public class Common{
 		return (Locator) map.get(unqueindex);	
 	}
 	
+	public Locator getLocatorMap(String path, String name) {
+		Map map = OptionFile.readxml(path);
+		return (Locator) map.get(name);	
+	}
+	
     
     /** 
     * @Title: getLocator 

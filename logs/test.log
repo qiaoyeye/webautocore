@@ -8738,3 +8738,222 @@
 2016-02-25 12:24:46.247 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:pwd
 2016-02-25 12:24:46.298 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
 2016-02-25 12:24:46.299 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-26 12:29:42.434 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 12:29:42.439 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 12:29:48.855 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 12:29:48.855 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 12:29:48.862 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 12:29:49.287 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 12:29:49.288 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 12:29:49.289 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 12:31:36.216 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 12:31:36.220 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 12:31:42.318 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 12:31:42.717 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 12:33:20.239 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 12:33:20.246 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 12:33:25.979 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 12:33:26.382 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 12:33:47.914 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 12:33:47.920 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 12:33:53.796 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 12:33:53.797 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 12:33:53.800 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-26 12:34:03.818 ERROR com.core.util.Log 32 error - com.core.util.Common: 通过id找不到user
+2016-02-26 12:34:03.820 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 12:34:04.250 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 12:34:04.250 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 12:34:04.250 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By id:user
+2016-02-26 12:34:45.674 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 12:34:45.680 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 12:34:54.819 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 12:34:54.820 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 12:34:54.832 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 12:34:55.044 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  softadmin@163.com
+2016-02-26 12:34:55.045 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 12:34:55.045 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 12:34:55.045 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:password
+2016-02-26 12:34:55.224 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  7405773
+2016-02-26 12:34:55.225 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 12:34:55.226 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 12:34:58.357 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 12:34:58.357 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 12:34:58.358 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 12:35:08.955 ERROR com.core.util.Log 32 error - com.core.util.Common: 通过name找不到account
+2016-02-26 12:35:08.956 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 14:24:49.576 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 14:24:49.583 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 14:25:01.229 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:25:01.230 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:25:01.240 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 14:25:01.543 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  softadmin@163.com
+2016-02-26 14:25:01.543 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:25:01.543 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:25:01.543 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:password
+2016-02-26 14:25:01.812 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  7405773
+2016-02-26 14:25:01.813 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:25:01.814 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 14:25:04.974 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:25:04.974 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:25:04.974 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 14:25:16.006 ERROR com.core.util.Log 32 error - com.core.util.Common: 通过name找不到account
+2016-02-26 14:25:16.008 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 14:28:06.859 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 14:28:06.868 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 14:28:18.276 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:28:18.277 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:28:18.288 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 14:28:18.547 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  softadmin@163.com
+2016-02-26 14:28:18.548 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:28:18.549 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:28:18.551 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:password
+2016-02-26 14:28:18.809 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  7405773
+2016-02-26 14:28:18.809 INFO  com.core.util.Log 24 info - com.core.util.Common: click(Locator locator)
+2016-02-26 14:28:18.809 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:28:18.810 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 14:28:19.437 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:28:19.437 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:28:19.438 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 14:28:19.668 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  qiaojiafei
+2016-02-26 14:28:19.669 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:28:19.670 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:28:19.671 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:password
+2016-02-26 14:28:19.893 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  123456
+2016-02-26 14:28:19.895 INFO  com.core.util.Log 24 info - com.core.util.Common: click(Locator locator)
+2016-02-26 14:28:19.895 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:28:19.897 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 14:29:19.561 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 14:29:19.568 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 14:29:31.695 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:29:31.697 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:29:31.702 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 14:29:31.991 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  softadmin@163.com
+2016-02-26 14:29:31.992 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:29:31.993 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:29:31.993 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:password
+2016-02-26 14:29:32.247 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  7405773
+2016-02-26 14:29:32.248 INFO  com.core.util.Log 24 info - com.core.util.Common: click(Locator locator)
+2016-02-26 14:29:32.248 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:29:32.250 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 14:29:32.976 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:29:32.979 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:29:32.980 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 14:29:33.284 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  qiaojiafei
+2016-02-26 14:29:33.286 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:29:33.287 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:29:33.288 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:password
+2016-02-26 14:29:33.501 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  123456
+2016-02-26 14:29:33.502 INFO  com.core.util.Log 24 info - com.core.util.Common: click(Locator locator)
+2016-02-26 14:29:33.503 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:29:33.505 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 14:32:17.500 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 14:32:17.502 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 14:32:20.833 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:32:20.834 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:32:20.837 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 14:32:21.059 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  softadmin@163.com
+2016-02-26 14:32:21.060 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:32:21.061 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:32:21.061 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:password
+2016-02-26 14:32:21.189 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  7405773
+2016-02-26 14:32:21.189 INFO  com.core.util.Log 24 info - com.core.util.Common: click(Locator locator)
+2016-02-26 14:32:21.190 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:32:21.190 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By xpath:/html/body/div[1]/div/div[2]/div[2]/form/div[3]/button
+2016-02-26 14:58:34.575 DEBUG com.core.util.Log 28 debug - com.core.base.BaseProvider: 驱动得到的测试数据数量为：1
+2016-02-26 14:58:34.580 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 14:58:34.581 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 14:58:37.743 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:58:37.744 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:58:37.747 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 14:58:37.926 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  softadmin@163.com
+2016-02-26 14:58:37.927 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 14:58:37.927 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:58:37.927 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:password
+2016-02-26 14:58:38.047 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  7405773
+2016-02-26 14:58:38.047 INFO  com.core.util.Log 24 info - com.core.util.Common: click(Locator locator)
+2016-02-26 14:58:38.047 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 14:58:38.048 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By xpath:/html/body/div[1]/div/div[2]/div[2]/form/div[3]/button
+2016-02-26 14:58:38.145 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 15:01:27.156 DEBUG com.core.util.Log 28 debug - com.core.base.BaseProvider: 驱动得到的测试数据数量为：1
+2016-02-26 15:01:27.162 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 15:01:27.162 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 15:01:30.309 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 15:01:30.309 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 15:01:30.312 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 15:01:30.498 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  softadmin@163.com
+2016-02-26 15:01:30.499 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 15:01:30.499 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 15:01:30.499 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:password
+2016-02-26 15:01:30.605 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  7405773
+2016-02-26 15:01:30.605 INFO  com.core.util.Log 24 info - com.core.util.Common: click(Locator locator)
+2016-02-26 15:01:30.606 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 15:01:30.606 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By xpath:/html/body/div[1]/div/div[2]/div[2]/form/div[3]/button
+2016-02-26 15:06:31.717 DEBUG com.core.util.Log 28 debug - com.core.base.BaseProvider: 驱动得到的测试数据数量为：1
+2016-02-26 15:06:31.724 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 15:06:31.724 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 15:06:34.841 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 15:06:34.841 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 15:06:34.844 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 15:06:35.033 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  softadmin@163.com
+2016-02-26 15:06:35.034 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 15:06:35.034 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 15:06:35.034 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:password
+2016-02-26 15:06:35.161 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  7405773
+2016-02-26 15:06:35.161 INFO  com.core.util.Log 24 info - com.core.util.Common: click(Locator locator)
+2016-02-26 15:06:35.161 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 15:06:35.161 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By xpath:/html/body/div[1]/div/div[2]/div[2]/form/div[3]/button
+2016-02-26 15:13:35.453 DEBUG com.core.util.Log 28 debug - com.core.base.BaseProvider: 驱动得到的测试数据数量为：1
+2016-02-26 15:13:35.459 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 15:13:35.459 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 15:13:38.570 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 15:13:38.571 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 15:13:38.574 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 15:13:38.767 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  softadmin@163.com
+2016-02-26 15:13:38.768 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 15:13:38.768 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 15:13:38.768 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:password
+2016-02-26 15:13:38.888 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  7405773
+2016-02-26 15:13:38.888 INFO  com.core.util.Log 24 info - com.core.util.Common: click(Locator locator)
+2016-02-26 15:13:38.888 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 15:13:38.889 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By xpath:/html/body/div[1]/div/div[2]/div[2]/form/div[3]/button
+2016-02-26 18:22:41.354 DEBUG com.core.util.Log 28 debug - com.core.base.BaseProvider: 驱动得到的测试数据数量为：1
+2016-02-26 18:22:41.360 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 18:22:41.361 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 18:22:44.535 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 18:22:44.536 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 18:22:44.539 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 18:25:58.414 DEBUG com.core.util.Log 28 debug - com.core.base.BaseProvider: 驱动得到的测试数据数量为：1
+2016-02-26 18:25:58.421 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 18:25:58.421 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 18:26:02.242 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 18:26:02.243 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 18:26:02.247 ERROR com.core.util.Log 32 error - com.core.base.BaseListener: testlogin: failed
+2016-02-26 18:31:24.227 DEBUG com.core.util.Log 28 debug - com.core.base.BaseProvider: 驱动得到的测试数据数量为：1
+2016-02-26 18:31:24.232 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 18:31:24.233 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 18:31:28.087 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 18:31:28.087 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 18:31:28.091 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 18:31:28.302 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  softadmin@163.com
+2016-02-26 18:31:28.303 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 18:31:28.304 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 18:31:28.304 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:password
+2016-02-26 18:31:28.396 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  7405773
+2016-02-26 18:31:28.396 INFO  com.core.util.Log 24 info - com.core.util.Common: click(Locator locator)
+2016-02-26 18:31:28.397 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 18:31:28.397 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By xpath:/html/body/div[1]/div/div[2]/div[2]/form/div[3]/button
+2016-02-26 18:33:26.117 DEBUG com.core.util.Log 28 debug - com.core.base.BaseProvider: 驱动得到的测试数据数量为：1
+2016-02-26 18:33:26.123 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: 初始化浏览器开始
+2016-02-26 18:33:26.124 INFO  com.core.util.Log 24 info - com.core.util.InitBrowser: chrome
+2016-02-26 18:33:29.172 DEBUG com.core.util.Log 28 debug - com.core.po.LoginPage: XML获取到的page name：com.core.po.LoginPage
+2016-02-26 18:33:29.218 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 18:33:29.219 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 18:33:29.223 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:account
+2016-02-26 18:33:29.421 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  softadmin@163.com
+2016-02-26 18:33:29.422 INFO  com.core.util.Log 24 info - com.core.util.Common: type(Locator locator, String values)
+2016-02-26 18:33:29.422 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 18:33:29.422 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By name:password
+2016-02-26 18:33:29.517 DEBUG com.core.util.Log 28 debug - com.core.util.Common: type value is:  7405773
+2016-02-26 18:33:29.518 INFO  com.core.util.Log 24 info - com.core.util.Common: click(Locator locator)
+2016-02-26 18:33:29.518 INFO  com.core.util.Log 24 info - com.core.util.Common: 调用findElement方法
+2016-02-26 18:33:29.518 DEBUG com.core.util.Log 28 debug - com.core.util.Common: find element By xpath:/html/body/div[1]/div/div[2]/div[2]/form/div[3]/button

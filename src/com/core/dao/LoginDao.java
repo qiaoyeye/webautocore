@@ -1,13 +1,12 @@
 package com.core.dao;
 
-import com.core.base.BaseLocator;
 
 /** 
  * @author QiaoJiafei 
  * @version 创建时间：2015年12月23日 下午2:01:20 
  * 类说明 
  */
-public class LoginLocator implements BaseLocator{
+public class LoginDao {
 
 	private String username;
 	private String password;
@@ -26,4 +25,5 @@ public class LoginLocator implements BaseLocator{
 	
 	public final String textusername = "username";
 	public final String textpassword = "password";
+	public final String textsubmit = "but_submit";
 }

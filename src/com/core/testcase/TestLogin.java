@@ -26,12 +26,12 @@ import com.sun.jna.Native.ffi_callback;
 public class TestLogin extends MidConvert{
 	public int sheet = 2;	
 	
-	@BeforeClass
+	@BeforeMethod
 	public void beforeClass() {
 		super.initDriver();
 		super.testURL();
 	}
-	@AfterClass
+	@AfterMethod
 	public void afterClass() {
 		super.tearDown();
 	}
@@ -44,13 +44,7 @@ public class TestLogin extends MidConvert{
 		int rowNum = (int)caseNum;
 		LoginPage lp = new LoginPage(dr);
 		lp.action(sheet, rowNum);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
+		
 	}
 
 }

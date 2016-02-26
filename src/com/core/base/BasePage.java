@@ -8,6 +8,8 @@ package com.core.base;
 *  
 */
 public interface BasePage {
+	
+	public static final String XMLPATH = "D:/git/webautocore/excel/storeelement.xml";
 	/** 
 	* @Title: validation 
 	* @Description: 每个页面的操作元素方法,将在该方法获取测试数据
@@ -15,7 +17,7 @@ public interface BasePage {
 	* @return void
 	* @throws 
 	*/
-	public abstract void validation(BaseLocator baseLocator);
+	public abstract BasePage validation();
 	/** 
 	* @Title: action 
 	* @Description: 入口方法，设置测试数据，覆盖方法中需要调用validation方法，

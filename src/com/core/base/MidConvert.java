@@ -2,6 +2,8 @@ package com.core.base;
 
 import org.openqa.selenium.WebDriver;
 
+import bsh.This;
+
 import com.core.dao.Locator;
 import com.core.util.Common;
 import com.core.util.InitBrowser;
@@ -18,7 +20,7 @@ import com.core.util.OptionFile;
 public class MidConvert extends BaseClass{
 	protected WebDriver dr; 
 	protected Locator lc = null;
-	protected Log log = new Log(MidConvert.class);
+	protected Log log = new Log(this.getClass());
 	protected Common cm = new Common();
 	
 	/**

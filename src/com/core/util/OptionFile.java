@@ -57,9 +57,65 @@ public class OptionFile {
 		//System.out.println(getLocatorArray("D:/03excel.xls",1).length);
 		
 		System.out.println(readWord("D:/work/项目/交易C/创意阳光/创意阳关ui和模版/创意阳光/彩虹计划协议_V1.0.doc"));*/
-		readxml("D:/git/webautocore/excel/loginpage.xml");
+		Map<String, Locator> map = getXMLMap("D:/git/webautocore/excel/storeelement.xml","login");
+		System.out.println(map.get("username").getBy());
 	}
 	static Log log = new Log(OptionFile.class);
+	
+	public static Map<String, Locator> getXMLMap(String xmlpath, String name) {
+	 	
+        // TODO Auto-generated method stub
+        SAXReader read = new SAXReader();
+        File file = new File(xmlpath);
+        Map<String, Locator> map = new HashMap<String, Locator>();
+        try {
+            Document document = read.read(file);
+            
+            Element root = document.getRootElement();
+            System.out.println("------>一级元素name:"+root.getName());
+            
+            List<Element> liste = root.elements();
+            System.out.println("------>二级元素大小:"+liste.size());
+            
+            for(Iterator<Element> iterator=root.elementIterator();iterator.hasNext();) {
+                Element e1 = iterator.next();
+                System.out.println("------>二级元素name:"+e1.getName());
+                System.out.println(e1.attributeValue("name"));
+                if (e1.attributeValue("name").equals(name)) {
+                	for(Iterator<Element> iterator2=e1.elementIterator();iterator2.hasNext();) {
+                        Element e2 = iterator2.next();
+                        System.out.println("------>三级元素name:"+e2.getName());
+                        System.out.println("------>三级元素text:"+e2.getText());
+                        System.out.println("--------------->map:"+e2.attributeValue(e2.attribute(0).getName()));
+                        System.out.println("--------------->map:"+e2.attributeValue(e2.attribute(1).getName()));
+                        String unqueindex = e2.getText();
+                        String key = e2.attributeValue(e2.attribute(0).getName());
+                        String value = e2.attributeValue(e2.attribute(1).getName());
+                        //map.put(key, value);
+                        Locator lc = new Locator(key,value);
+                        map.put(unqueindex, lc);
+                	}
+				}
+    /*            for(Iterator<Element> iterator2=e1.elementIterator();iterator2.hasNext();) {
+                    Element e2 = iterator2.next();
+                    System.out.println("------>三级元素name:"+e2.getName());
+                    System.out.println("------>三级元素text:"+e2.getText());
+                    System.out.println("--------------->map:"+e2.attributeValue(e2.attribute(0).getName()));
+                    System.out.println("--------------->map:"+e2.attributeValue(e2.attribute(1).getName()));
+                    String unqueindex = e2.getText();
+                    String key = e2.attributeValue(e2.attribute(0).getName());
+                    String value = e2.attributeValue(e2.attribute(1).getName());
+                    //map.put(key, value);
+                    Locator lc = new Locator(key,value);
+                    map.put(unqueindex, lc);
+                }*/
+            }
+        } catch (DocumentException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return map;
+    }
 	
 	 /** 
 	* @Title: readxml 
