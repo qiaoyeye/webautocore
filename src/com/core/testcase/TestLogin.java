@@ -15,13 +15,14 @@ import com.core.po.LoginPage;
 import com.core.util.OptionFile;
 import com.sun.jna.Native.ffi_callback;
 
-
-
 /** 
- * @author QiaoJiafei 
- * @version 创建时间：2015年12月23日 上午11:19:51 
- * 类说明 
- */
+* 测试类：测试登录
+* @ClassName: TestLogin 
+* @Description: TODO(这里用一句话描述这个类的作用) 
+* @author qiaojiafei 
+* @date 2016年2月29日 上午11:55:48 
+*  
+*/
 @Listeners({com.core.base.BaseListener.class})
 public class TestLogin extends MidConvert{
 	public int sheet = 2;	
@@ -35,7 +36,6 @@ public class TestLogin extends MidConvert{
 	public void afterClass() {
 		super.tearDown();
 	}
-
 	
 	//推荐使用该方法，即时页面元素变了，只要该LoginPage类即可，且可以共其它类直接调用登录
 	//@Test(retryAnalyzer=com.core.listener.TestRetryAnalyzer.class)

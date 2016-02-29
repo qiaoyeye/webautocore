@@ -9,10 +9,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /** 
- * @author QiaoJiafei 
- * @version 创建时间：2016年2月25日 下午12:30:26 
- * 类说明  操作sql数据库
- */
+* 操作常见的sql类
+* @ClassName: OptionSQL 
+* @Description: TODO(这里用一句话描述这个类的作用) 
+* @author qiaojiafei 
+* @date 2016年2月29日 上午11:59:41 
+*  
+*/
 public class OptionSQL {
 
 	public static String connectSql(String sql,String userNum, String col) {

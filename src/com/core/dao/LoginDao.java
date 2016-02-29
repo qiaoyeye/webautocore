@@ -1,11 +1,12 @@
 package com.core.dao;
 
-
 /** 
- * @author QiaoJiafei 
- * @version 创建时间：2015年12月23日 下午2:01:20 
- * 类说明 
- */
+* 封装登录页面的测试数据类
+* @ClassName: LoginDao (登录页面的封装测试数据的类) 
+* @author qiaojiafei 
+* @date 2016年2月29日 上午11:32:00 
+*  
+*/
 public class LoginDao {
 
 	private String username;

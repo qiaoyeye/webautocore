@@ -44,6 +44,7 @@ import org.openqa.selenium.io.FileHandler;
 import com.core.dao.Locator;
 
 /** 
+* 操作常见的文件类
 * @ClassName: OptionFile 
 * @Description: 操作文件类
 * @author qiaojiafei 

@@ -20,6 +20,7 @@ import com.core.dao.Locator;
 
 
 /** 
+* 封装selenium常用的方法，把所有方法放入该类的目的是初始化Common一次，就可以调用所有方法
 * @ClassName: CommBase 
 * @Description: 封装selenium常用的方法，把所有方法放入该类的目的是初始化Common一次，就可以调用所有方法
 * @author qiaojiafei 

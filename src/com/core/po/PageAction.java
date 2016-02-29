@@ -1,37 +1,34 @@
 package com.core.po;
 
-import java.util.Map;
-
-import org.openqa.selenium.WebDriver;
-
-import com.core.base.BasePage;
-import com.core.base.MidConvert;
-import com.core.dao.Locator;
-import com.core.util.Common;
-import com.core.util.Log;
-import com.core.util.OptionFile;
-
 /** 
- * @author QiaoJiafei 
- * @version 创建时间：2016年2月26日 下午6:13:32 
- * 类说明 
- */
-public class PageAction {
-	protected WebDriver dr; 
-	Map<String, Locator> locatorMap;
-	protected Log log = new Log(this.getClass());
-	protected Common cm = new Common();
+* 所有PageObject类都实现该接口，对外提供了validation的方法和action方法
+* action方法封装页面元素初始化和测试数据初始化
+* validation方法封装业务逻辑
+* 详见LoginPage类的使用
+* @ClassName: BasePage 
+* @Description: TODO(所有PageObject类都实现该接口，对外提供了validation的方法和action方法) 
+* @author qiaojiafei 
+* @date 2015年12月23日 下午3:05:10 
+*  
+*/
+public interface PageAction {
 	
-	public PageAction() {
-		// TODO Auto-generated constructor stub
-	}
-	
-	public PageAction(WebDriver dr) {
-		this.dr = dr;
-		cm.setDriver(this.dr);
-		locatorMap = OptionFile.getXMLMap(BasePage.XMLPATH,
-                this.getClass().getCanonicalName());
-		log.debug("XML获取到的page name："+this.getClass().getCanonicalName());
-	}
-
+	public static final String XMLPATH = "D:/git/webautocore/excel/storeelement.xml";
+	/** 
+	* @Title: validation 
+	* @Description: 每个页面的操作元素方法,将在该方法获取测试数据
+	* @param baseLocator
+	* @return void
+	* @throws 
+	*/
+	public abstract PageAction validation();
+	/** 
+	* @Title: action 
+	* @Description: 入口方法，设置测试数据，覆盖方法中需要调用validation方法，
+	* @param sheet
+	* @param CaseNum
+	* @return void
+	* @throws 
+	*/
+	public abstract void action(int sheet, int CaseNum);
 }

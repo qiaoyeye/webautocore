@@ -7,9 +7,10 @@ import org.testng.annotations.Test;
 import com.core.util.Log;
 
 /** 
-* 失败重试监听类，需要在测试类中注解：@Test(retryAnalyzer=com.core.base.TestRetryAnalyzer.class)
+* 失败重试监听类，需要在测试类中注解：@Test(retryAnalyzer=com.core.listener.TestRetryAnalyzer.class)
+* 考虑影响测试用例的执行效率，可根据实际情况使用，建议使用该类，不使用MyRetry……
 * @ClassName: TestRetryAnalyzer 
-* @Description: 失败重试监听类，需要在测试类中注解：@Test(retryAnalyzer=com.core.base.TestRetryAnalyzer.class) ,该类与BaseListener配合使用
+* @Description: 失败重试监听类，需要在测试类中注解：@Test(retryAnalyzer=com.core.listener.TestRetryAnalyzer.class) ,该类与BaseListener配合使用
 * @author qiaojiafei 
 * @date 2015年11月11日 下午12:25:18 
 *  

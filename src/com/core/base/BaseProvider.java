@@ -16,12 +16,15 @@ import com.core.util.Log;
 import com.core.util.OptionFile;
 import com.core.util.Priority;
 
-
 /** 
- * @author QiaoJiafei 
- * @version 创建时间：2016年1月14日 下午2:13:10 
- * 类说明 
- */
+* 测试数据驱动类，为测试用例提供测试数据，具体返回的是excel符合优先级的测试数据的行数
+* 使用方法：在测试类中的@Test后加入(dataProvider="testdp",dataProviderClass = BaseProvider.class)
+* @ClassName: BaseProvider 
+* @Description: TODO(测试数据驱动类，为测试用例提供测试数据，具体返回的是excel符合优先级的行数) 
+* @author qiaojiafei 
+* @date 2016年2月29日 上午11:23:50 
+*  
+*/
 public class BaseProvider {
 	static Log log = new Log(BaseProvider.class);	
 	@DataProvider(name="testdp")

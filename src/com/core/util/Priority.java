@@ -1,9 +1,13 @@
 package com.core.util;
+
 /** 
- * @author QiaoJiafei 
- * @version 创建时间：2016年1月20日 上午10:38:16 
- * 类说明 
- */
+* 定义优先级的枚举类
+* @ClassName: Priority 
+* @Description: TODO(这里用一句话描述这个类的作用) 
+* @author qiaojiafei 
+* @date 2016年2月29日 上午11:59:58 
+*  
+*/
 public enum Priority {
 	P1(){
 		@Override

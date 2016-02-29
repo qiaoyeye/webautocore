@@ -1,30 +1,47 @@
 package com.core.base;
 
+import java.util.Map;
+
+import org.openqa.selenium.WebDriver;
+
+import com.core.dao.Locator;
+import com.core.po.PageAction;
+import com.core.util.Common;
+import com.core.util.Log;
+import com.core.util.OptionFile;
+
 /** 
+* 基本页面类，所有po内的页面都要继承该类，该类封装了common类的webdriver初始化操作和获取XML中元素为page下的所有map，如：
+*     <page name="com.core.po.LoginPage">
+*		<element ByType="name" value="account">username</element>
+*    </page>
+* map的key=username，value是Locator对象，包含ByType和value
 * @ClassName: BasePage 
-* @Description: TODO(所有PageObject类都实现该接口，对外提供了validation的方法和action方法) 
+* @Description: TODO(基本页面类，所有po内的页面都要继承该类，该类封装了common类的webdriver初始化操作和获取XML中元素为page下的所有map) 
 * @author qiaojiafei 
-* @date 2015年12月23日 下午3:05:10 
+* @date 2016年2月29日 上午11:19:10 
 *  
 */
-public interface BasePage {
+public class BasePage {
+	protected WebDriver dr; 
+	protected Map<String, Locator> locatorMap;
+	protected Log log = new Log(this.getClass());
+	protected Common cm = new Common();
 	
-	public static final String XMLPATH = "D:/git/webautocore/excel/storeelement.xml";
-	/** 
-	* @Title: validation 
-	* @Description: 每个页面的操作元素方法,将在该方法获取测试数据
-	* @param baseLocator
-	* @return void
-	* @throws 
-	*/
-	public abstract BasePage validation();
-	/** 
-	* @Title: action 
-	* @Description: 入口方法，设置测试数据，覆盖方法中需要调用validation方法，
-	* @param sheet
-	* @param CaseNum
-	* @return void
-	* @throws 
-	*/
-	public abstract void action(int sheet, int CaseNum);
+	public BasePage() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public BasePage(WebDriver dr) {
+		this.dr = dr;
+		cm.setDriver(this.dr);
+		locatorMap = OptionFile.getXMLMap(PageAction.XMLPATH,
+                this.getClass().getCanonicalName());
+		log.debug("XML获取到的page name："+this.getClass().getCanonicalName());
+	}
+	
+	public WebDriver getDriver() {
+		return dr;
+	}
+
 }

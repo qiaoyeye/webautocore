@@ -11,6 +11,8 @@ import com.core.util.Log;
 import com.core.util.OptionFile;
 
 /** 
+* 中间转换类，继承BaseClass后，所有的测试类，可以继承该类，不需要再集成BaseClass
+* 为了节省测试类中，每次都要new comm，new log对象，所以在该类中集中进行了对象的初始化操作
 * @ClassName: MidConvert 
 * @Description: TODO 中间转换类，继承BaseClass后，所有的测试类，可以继承该类，不需要再集成BaseClass
 * @author qiaojiafei 

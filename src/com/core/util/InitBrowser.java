@@ -8,10 +8,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 /** 
- * @author QiaoJiafei 
- * @version 创建时间：2015年10月22日 下午12:08:20 
- * 类说明 
- */
+* 浏览器初始化，根据Myconfig配置文件创建相应的浏览器
+* @ClassName: InitBrowser 
+* @Description: TODO(这里用一句话描述这个类的作用) 
+* @author qiaojiafei 
+* @date 2016年2月29日 上午11:58:15 
+*  
+*/
 public class InitBrowser {
 
 	public static WebDriver init(WebDriver dr) {

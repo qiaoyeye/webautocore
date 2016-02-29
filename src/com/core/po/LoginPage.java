@@ -1,5 +1,6 @@
 package com.core.po;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,10 +12,17 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-import com.core.base.BasePage;
+
+
+
+
+
+
 import com.core.base.MidConvert;
+import com.core.base.BasePage;
 import com.core.dao.Locator;
 import com.core.dao.LoginDao;
+import com.core.factory.PageFactory;
 import com.core.util.TestData;
 import com.core.util.OptionFile;
 
@@ -25,15 +33,14 @@ import com.core.util.OptionFile;
 * @date 2015年12月23日 下午3:08:15 
 *  
 */
-public class LoginPage extends PageAction implements BasePage{
+public class LoginPage extends BasePage implements PageAction{
 		
 	Locator lc_name;
 	Locator lc_pwd;
 	Locator but_submit;
 	WebDriver dr;
 	LoginDao loginDao = new LoginDao();
-	
-	
+		
 	public LoginPage(){
 		super();
 	}
@@ -48,7 +55,7 @@ public class LoginPage extends PageAction implements BasePage{
 	}
 		
 	@Override
-	public BasePage validation() {
+	public PageAction validation(){
 		// TODO Auto-generated method stub
 		//if(baseLocator instanceof LoginDao) {
 			//LoginDao loginLocator = (LoginDao)baseLocator;
@@ -91,7 +98,14 @@ public class LoginPage extends PageAction implements BasePage{
 		//}else {
 		//	log.warn("传入的BaseLocator不是LoginLocator");
 		//}
-		return new HomePage(dr);
+	      
+	        /*
+		//不使用pagefactory
+	    return new HomePage(dr);
+	        */
+	    //使用pagefactory
+		return   (HomePage) PageFactory.getPage(HomePage.class, getDriver());
+
 	}
 
 	@Override
@@ -116,17 +130,41 @@ public class LoginPage extends PageAction implements BasePage{
 		
 		
 		//调用业务逻辑方法
+
 		validation();
+
 	}
 	
+	
+	/** 
+	* 输入用户名方法
+	* @Title: typeUsername 
+	* @Description: TODO
+	* @return void
+	* @throws 
+	*/
 	protected void typeUsername() {
 		System.out.println("--------------"+lc_name.getBy()+";"+lc_name.getElement()+";"+loginDao.getUsername());
 		cm.sendkeys(lc_name, loginDao.getUsername());
 	}
+	/** 
+	* 输入密码方法
+	* @Title: typePassword 
+	* @Description: TODO
+	* @return void
+	* @throws 
+	*/
 	protected void typePassword() {
 		cm.sendkeys(lc_pwd, loginDao.getPassword());
 	}
 	
+	/** 
+	* 登录提交方法
+	* @Title: submit 
+	* @Description: TODO
+	* @return void
+	* @throws 
+	*/
 	protected void submit() {
 		cm.click(but_submit);
 	}	

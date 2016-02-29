@@ -14,6 +14,7 @@ import com.core.listener.TestRetryAnalyzer;
 import com.core.util.Log;
 
 /** 
+* 基础监听类，包含自动截图，失败自动重试方法 ，所有测试类都要添加@Listeners({com.core.base.BaseListener.class})
 * @ClassName: BaseListener 
 * @Description: 基础监听类，包含自动截图，失败自动重试方法 ，所有测试类都要添加@Listeners({com.core.base.BaseListener.class})
 * @author qiaojiafei 
@@ -54,6 +55,7 @@ public class BaseListener extends TestListenerAdapter{
 
 		//super.onTestFailure(result);
 		log.error(result.getName()+": failed");
+		//调用baseclass的自动截图方法
 		bc.takeScreenShort(result);
 		/*===========================以上代码是自动截图,下面是自动重试====================================*/
 		if(result.getMethod().getRetryAnalyzer() !=null) {

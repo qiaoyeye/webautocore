@@ -4,11 +4,14 @@ import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
 /** 
- * @author QiaoJiafei 
- * @version 创建时间：2015年11月10日 下午3:04:46 
- * 失败重试的类，可以在测试类里的测试方法加注解：(retryAnalyzer=com.core.base.MyRetryAnalyzer.class)方式来调用或者使用
- * RetryListener类，详见RetryListener类说明
- */
+* 失败重试的类，可以在测试类里的测试方法加注解：(retryAnalyzer=com.core.base.MyRetryAnalyzer.class)方式来调用或者使用
+* RetryListener类，详见RetryListener类说明
+* @ClassName: MyRetryAnalyzer 
+* @Description: TODO(这里用一句话描述这个类的作用) 
+* @author qiaojiafei 
+* @date 2016年2月29日 上午11:33:46 
+*  
+*/
 public class MyRetryAnalyzer implements IRetryAnalyzer {
 	
 	private static final String TEST_RETRY_COUNT = "testRetryCount";

@@ -22,10 +22,14 @@ import org.testng.annotations.Test;
 import com.core.dao.Locator;
 
 /** 
- * @author QiaoJiafei 
- * @version 创建时间：2015年10月26日 上午10:51:41 
- * 类说明 
- */
+* 获取验证码
+* 将图片的By by和by值封装为Locator对象传入
+* @ClassName: GetIMGYzm 
+* @Description: TODO(这里用一句话描述这个类的作用) 
+* @author qiaojiafei 
+* @date 2016年2月29日 上午11:56:33 
+*  
+*/
 public class GetIMGYzm {
 	static String s = "";
 

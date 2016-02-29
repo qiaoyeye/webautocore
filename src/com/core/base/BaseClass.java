@@ -15,7 +15,8 @@ import org.testng.Reporter;
 
 
 /** 
-* @ClassName: BaseClass 
+* 基本原始类，所有测试类都要添加，为自动截图提供对象
+* * @ClassName: BaseClass 
 * @Description: 基本原始类，所有测试类都要添加
 * @author qiaojiafei 
 * @date 2015年10月22日 上午10:29:19 

@@ -1,10 +1,17 @@
 package com.core.dao;
 
 /** 
- * @author QiaoJiafei 
- * @version 创建时间：2015年10月19日 下午6:48:16 
- * 类说明 
- */
+* 页面元素封装类，将页面元素的By by和by的值封装成Locator对象，为common类的操作提供对象
+* ByType bt：相应的By by
+* String element：相应的by值
+* String value：如sendkeys时，要传入的数据
+* 可以将以上三个封装为Locator对象；如果不需要value，则将bt和element封装为对象
+* @ClassName: Locator 
+* @Description: TODO(页面元素封装类，将页面元素的By by和by的值封装成Locator对象，为common类的操作提供对象) 
+* @author qiaojiafei 
+* @date 2016年2月29日 上午11:28:16 
+*  
+*/
 public class Locator {
     public enum ByType {
         id("id"), name("name"), xpath("xpath"), className("className"),cssSelector("cssSelector"),

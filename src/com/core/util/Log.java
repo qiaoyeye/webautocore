@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 
 /** 
+* 日志类,使用方法：在相应的类中Log log = new Log(this.getClass());
 * @ClassName: Log 
 * @Description: TODO(日志类) 
 * @author qiaojiafei 
